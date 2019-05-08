@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Irish Elections</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+  <h1 style="text-align: center; margin: 20px 0 20px 0;">Irish Elections 2019 Dublin</h1>
+  <div id="msg" class="text-danger"></div>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-striped table-dark">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Candidate</th>
+          <th scope="col">Votes</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    
+  </div>
+  <div style="margin: 20px 0 20px 0;"> 
+    <select id="candidate-options" class="btn btn-secondary btn-lg dropdown-toggle" name="candidate"></select>
+    <button id="candidate-vote" onclick="voteForCandidate()" class="btn btn-primary btn-lg btn-danger">Vote</button>
+  </div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="index.js"></script>
+</html>
